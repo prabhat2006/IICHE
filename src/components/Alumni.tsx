@@ -9,18 +9,21 @@ const alumni = [
     company: 'IICHE-VIT',
     role: 'Ex-Chairperson',
     image: 'images/ahin.png',
+    linkedin: 'https://www.linkedin.com/in/ahin-bagchi-78b671248/', // Add LinkedIn URL
   },
   {
     name: 'Disha Talukdar',
     company: 'IICHE-VIT',
     role: 'Ex Vice-Chairperson',
     image: 'images/disha.png',
+    linkedin: 'https://www.linkedin.com/in/disha-talukdar-16aa91288/', // Add LinkedIn URL
   },
   {
     name: 'Ratna Mrinalini',
     company: 'IICHE-VIT',
     role: 'Ex Secretary',
     image: 'images/ratna.png',
+    linkedin: 'https://www.linkedin.com/in/ratna-mrinalini-a-458a02269/', // Add LinkedIn URL
   },
   // Add more alumni here if needed
 ];
@@ -80,9 +83,14 @@ const Alumni = () => {
                 <Award className="w-4 h-4" />
                 <span>{alum.role}</span>
               </div>
-              <button className="bg-accent text-dark py-2 px-4 rounded font-bold neubrutalism">
+              <a 
+                href={alum.linkedin}  // LinkedIn URL
+                target="_blank"  // Open in new tab
+                rel="noopener noreferrer"  // Security measure for links
+                className="bg-accent text-dark py-2 px-4 rounded font-bold neubrutalism"
+              >
                 Connect
-              </button>
+              </a>
             </div>
           ))}
         </div>
