@@ -7,6 +7,10 @@ const About = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
+      // Ensure all about-content elements are visible initially
+      gsap.set('.about-content', { opacity: 1, visibility: 'visible' });
+
+      // Animation for about-content elements
       gsap.from('.about-content', {
         scrollTrigger: {
           trigger: sectionRef.current,

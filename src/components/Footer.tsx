@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { BeakerIcon, Linkedin, Twitter, Instagram, Youtube } from 'lucide-react';
+import { Linkedin, Instagram, Github } from 'lucide-react';
 
 const Footer = () => {
   const footerRef = useRef<HTMLDivElement>(null);
@@ -24,41 +24,53 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer ref={footerRef} className="bg-gradient-to-b from-dark to-primary py-12">
+    <footer ref={footerRef} className="bg-gradient-to-b from-gray-800 via-gray-900 to-black py-12 text-gray-200">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
+          {/* Logo and Mission Section */}
           <div className="footer-content">
-            <div className="flex items-center gap-2 mb-4">
-              <BeakerIcon className="w-8 h-8 text-accent" />
-              <span className="text-2xl font-bold">IIChE VIT</span>
+            <div className="flex justify-center md:justify-start items-center gap-2 mb-4">
+              <img 
+                src="images/iiche.png" 
+                alt="IIChE VIT Logo" 
+                className="w-16 h-16 object-contain"  // Larger size and high quality
+              />
+              <span className="text-2xl font-bold text-white">IIChE VIT</span>
             </div>
-            <p className="text-gray-300">Building the Future of Chemical Engineering</p>
+            <p className="text-gray-400">
+              Empowering the future of Chemical Engineering with innovation and excellence.
+            </p>
           </div>
-          
-          <div className="footer-content flex flex-col items-center">
+
+          {/* Social Media Links Section */}
+          <div className="footer-content">
             <h3 className="text-xl font-bold mb-4">Connect With Us</h3>
-            <div className="flex gap-4">
-              <a href="#" className="hover:text-accent transition-colors">
+            <p className="text-gray-400 mb-4">
+              Stay connected and follow us on our social media platforms.
+            </p>
+            <div className="flex justify-center gap-6 mt-6">
+              <a href="https://www.linkedin.com/company/iiche-vit/" aria-label="LinkedIn" className="hover:text-accent transition-colors">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="#" className="hover:text-accent transition-colors">
-                <Twitter className="w-6 h-6" />
-              </a>
-              <a href="#" className="hover:text-accent transition-colors">
+              <a href="https://instagram.com/iichevit" aria-label="Instagram" className="hover:text-accent transition-colors">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="#" className="hover:text-accent transition-colors">
-                <Youtube className="w-6 h-6" />
+              <a href="https://github.com/IICHE-VIT" aria-label="Github" className="hover:text-accent transition-colors">
+                <Github className="w-6 h-6" />
               </a>
             </div>
           </div>
-          
+
+          {/* Contact Section */}
           <div className="footer-content">
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-            <p className="text-gray-300 mb-2">VIT University</p>
-            <p className="text-gray-300 mb-4">Vellore, Tamil Nadu</p>
-            <p className="text-sm text-gray-400">© 2025 IIChE VIT. All rights reserved.</p>
+            <p className="text-gray-400">VIT University</p>
+            <p className="text-gray-400 mb-4">Vellore, Tamil Nadu</p>
+            <p className="text-sm text-gray-500">© 2025 IIChE VIT. All rights reserved.</p>
           </div>
+        </div>
+        <div className="mt-8 text-center text-gray-500 text-sm">
+          Designed with ❤️ by IIChE VIT Team
         </div>
       </div>
     </footer>

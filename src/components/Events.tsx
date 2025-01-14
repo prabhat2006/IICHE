@@ -1,29 +1,29 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { Calendar, Users, Trophy, Microscope, ExternalLink } from 'lucide-react';
+import { Calendar, ExternalLink } from 'lucide-react';
 
 const events = [
   {
     title: "SchemCon'25",
     description: "The flagship technical symposium featuring workshops, competitions, and industry talks. Join us for a transformative experience in chemical engineering excellence.",
-    icon: Trophy,
     status: "Coming Soon",
-    date: "March 2025",
-    link: "https://schemcon25.iichevit.org"
+    date: "September 2025",
+    link: "https://schemcon2025.com",
+    image: "images/schemcon.png",  // Add image for event
   },
   {
-    title: "Industry Connect",
-    description: "Monthly sessions with industry experts sharing insights and experiences from the field of chemical engineering.",
-    icon: Users,
-    status: "Monthly",
-    date: "Ongoing"
-  },
-  {
-    title: "Research Symposium",
-    description: "A platform for students to present their research work and get feedback from industry experts.",
-    icon: Microscope,
+    title: "Family Fued",
+    description: "An exciting thrilling game which will give you real environment of family fued.",
     status: "Upcoming",
-    date: "December 2024"
+    date: "22 January 2025",
+    image: "images/industryconnect.jpg",  // Add image for event
+  },
+  {
+    title: "Yantra'25",
+    description: "Yantra Central Hack is an event where participants from diverse fields collaborate to solve real-world challenges. It fosters teamwork, creative problem-solving, and technical skill development.",
+    status: "Upcoming",
+    date: "4 February 2025",
+    image: "images/yantra.png",  // Add image for event
   },
   {
     title: "SchemCon Archive",
@@ -31,8 +31,9 @@ const events = [
     icon: Calendar,
     status: "Archive",
     date: "2020-2024",
-    link: "https://archive.iichevit.org/schemcon"
-  }
+    link: "https://archive.iichevit.org/schemcon",
+    image: "images/schemconarchive.jpg",  // Add image for event
+  },
 ];
 
 const Events = () => {
@@ -40,6 +41,10 @@ const Events = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
+      // Ensure elements are visible immediately
+      gsap.set('.event-card', { opacity: 1, visibility: 'visible' });
+
+      // Animation for event cards
       gsap.from('.event-card', {
         scrollTrigger: {
           trigger: sectionRef.current,
@@ -74,7 +79,6 @@ const Events = () => {
               onClick={() => handleRedirect(event.link)}
             >
               <div className="flex items-center justify-between mb-4">
-                <event.icon className="w-8 h-8 text-accent" />
                 <div className="flex gap-2">
                   <span className="bg-accent text-dark px-3 py-1 rounded-full text-sm font-bold">
                     {event.status}
@@ -89,6 +93,11 @@ const Events = () => {
                 {event.link && <ExternalLink className="w-4 h-4" />}
               </h3>
               <p className="text-gray-300 mb-4 text-sm">{event.description}</p>
+              <img
+                src={event.image} // Image for event
+                alt={event.title}
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
               <button className="w-full bg-accent text-dark py-2 rounded font-bold neubrutalism">
                 {event.link ? 'Visit Website' : 'Learn More'}
               </button>
