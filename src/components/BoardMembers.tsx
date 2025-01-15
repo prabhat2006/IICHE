@@ -17,7 +17,7 @@ const boardMembers = [
     
   },
   {
-    name: 'Aditya Chakravarthi',
+    name: 'Aditya Chakravarti',
     role: 'Secretary',
     image: 'images/aditya.jpg',
     
@@ -43,11 +43,11 @@ const boardMembers = [
   {
     name: 'Rebiya Ramchandaran',
     role: 'Creative Head',
-    image: 'images/rebiya.jpg',
+    image: 'images/rebiya.jpeg',
     
   },
   {
-    name: 'Anmaria Benny',
+    name: 'Annmaria Benny',
     role: 'Event/Management Head',
     image: 'images/anmaria.jpg',
     

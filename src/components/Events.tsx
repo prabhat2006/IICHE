@@ -9,21 +9,14 @@ const events = [
     status: "Coming Soon",
     date: "September 2025",
     link: "https://schemcon2025.com",
-    image: "images/schemcon.png",  // Add image for event
-  },
-  {
-    title: "Family Fued",
-    description: "An exciting thrilling game which will give you real environment of family fued.",
-    status: "Upcoming",
-    date: "22 January 2025",
-    image: "images/industryconnect.jpg",  // Add image for event
+    image: "images/schemcon.png", // Add image for event
   },
   {
     title: "Yantra'25",
     description: "Yantra Central Hack is an event where participants from diverse fields collaborate to solve real-world challenges. It fosters teamwork, creative problem-solving, and technical skill development.",
     status: "Upcoming",
     date: "4 February 2025",
-    image: "images/yantra.png",  // Add image for event
+    image: "images/yantra.png", // Add image for event
   },
   {
     title: "SchemCon Archive",
@@ -32,7 +25,7 @@ const events = [
     status: "Archive",
     date: "2020-2024",
     link: "https://archive.iichevit.org/schemcon",
-    image: "images/schemconarchive.jpg",  // Add image for event
+    image: "images/schemconarchive.jpg", // Add image for event
   },
 ];
 
@@ -41,10 +34,8 @@ const Events = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Ensure elements are visible immediately
       gsap.set('.event-card', { opacity: 1, visibility: 'visible' });
 
-      // Animation for event cards
       gsap.from('.event-card', {
         scrollTrigger: {
           trigger: sectionRef.current,
@@ -68,13 +59,13 @@ const Events = () => {
   };
 
   return (
-    <div ref={sectionRef} id="events" className="py-12 bg-gradient-to-b from-primary to-secondary">
-      <div className="max-w-6xl mx-auto px-4">
+    <div ref={sectionRef} id="events" className="h-screen py-12 bg-gradient-to-b from-primary to-secondary">
+      <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-10">Upcoming Events</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-center h-full">
           {events.map((event, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="event-card bg-white/10 backdrop-blur-lg p-6 rounded-lg neubrutalism card-hover cursor-pointer"
               onClick={() => handleRedirect(event.link)}
             >
@@ -94,7 +85,7 @@ const Events = () => {
               </h3>
               <p className="text-gray-300 mb-4 text-sm">{event.description}</p>
               <img
-                src={event.image} // Image for event
+                src={event.image}
                 alt={event.title}
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />

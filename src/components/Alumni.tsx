@@ -45,7 +45,7 @@ const Alumni = () => {
           scrub: 1,
         },
         opacity: 0,
-        y: 50,
+        y: 20,  // Adjust the vertical offset for better smooth animation
         stagger: 0.2,
       });
     }, sectionRef);
@@ -55,12 +55,12 @@ const Alumni = () => {
 
   return (
     <div ref={sectionRef} id="alumni" className="py-20 bg-gradient-to-b from-dark to-primary flex items-center justify-center">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-center gap-4 mb-16">
           <GraduationCap className="w-12 h-12 text-accent" />
-          <h2 className="text-5xl font-bold text-center">Alumni Network</h2>
+          <h2 className="text-5xl font-bold text-center">Advisory Network</h2>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
           {alumni.map((alum, index) => (
             <div 
               key={index} 

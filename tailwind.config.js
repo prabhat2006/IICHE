@@ -10,7 +10,7 @@ export default {
         primary: '#00425A',
         secondary: '#1F8A70',
         accent: '#BFDB38',
-        dark: '#1F1F1F',
+        dark: '#121212',
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',
@@ -24,4 +24,5 @@ export default {
     },
   },
   plugins: [],
+  darkMode: 'class',
 };
