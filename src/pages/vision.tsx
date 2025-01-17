@@ -76,11 +76,7 @@ const Vision = () => {
             The board and managerial team are a tightly packed column of heads who lead the core team and the chapter towards the path of success. They ensure that every domain works to its fullest. Besides techno management skills, they make certain that every member boosts their auxiliary skills such as design, oratory and writing proficiency through various activities.
           </p>
           <p className="text-gray-300">
-<<<<<<< HEAD
             Each board and managerial tenure lasts for a year, and through extreme scrutiny, observation, and analysis, the positions are handed over to the next batch.
-=======
-            Each board and managerial tenure last for a year, and through extreme scrutiny, observation and analysis the positions are handed over to the next batch.
->>>>>>> 286c2185c3d7d63e8becaf935bf9b3cc733dd316
           </p>
           <motion.button
             onClick={handleKnowMoreClick}
@@ -122,11 +118,7 @@ const Vision = () => {
             vitiiche@gmail.com
           </a>
           <p className="text-sm text-gray-400 mt-4">
-<<<<<<< HEAD
             Designed with ❤️ by IIChE VIT Team.
-=======
-            Copyright © 2023 IIChE VIT - All Rights Reserved.
->>>>>>> 286c2185c3d7d63e8becaf935bf9b3cc733dd316
           </p>
         </motion.footer>
       </div>

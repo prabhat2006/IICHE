@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { Link } from 'react-router-dom';
-=======
-import React from 'react';
->>>>>>> 286c2185c3d7d63e8becaf935bf9b3cc733dd316
 
 const DepartmentsPage = () => {
   const departmentLinks = [
@@ -17,17 +13,6 @@ const DepartmentsPage = () => {
     <div className="min-h-screen pt-32 pb-12 px-4">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-white mb-8">Departments</h1>
-<<<<<<< HEAD
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {departmentLinks.map((link) => (
-            <Link
-              key={link.href}
-              to={link.href}
-              className="flex flex-col items-center p-4 bg-dark border-2 border-accent rounded-lg hover:shadow-[4px_4px_0_0_#BFDB38] transition-all hover:translate-x-[-2px] hover:translate-y-[-2px]"
-            >
-              <h2 className="text-xl text-white">{link.label}</h2>
-            </Link>
-=======
         <div className="grid gap-4">
           {departmentLinks.map((link) => (
             <a
@@ -37,7 +22,6 @@ const DepartmentsPage = () => {
             >
               <h2 className="text-xl text-white">{link.label}</h2>
             </a>
->>>>>>> 286c2185c3d7d63e8becaf935bf9b3cc733dd316
           ))}
         </div>
       </div>

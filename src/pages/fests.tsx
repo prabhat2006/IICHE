@@ -2,11 +2,7 @@ import React from 'react';
 
 const FestsPage = () => {
   const festLinks = [
-<<<<<<< HEAD
     { label: "CHEM-SUMMIT'23", href: '/fests/chemsummit23' },
-=======
-    { label: "CHEM-SUMMIT'23", href: '/fests/chem-summit-23' },
->>>>>>> 286c2185c3d7d63e8becaf935bf9b3cc733dd316
     { label: "Gravitas '23", href: '/fests/gravitas-23' },
     { label: "Gravitas '22", href: '/fests/gravitas-22' },
     { label: 'About SaFest', href: '/fests/safest' },

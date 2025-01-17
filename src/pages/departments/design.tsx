@@ -10,7 +10,6 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
-<<<<<<< HEAD
     name: "Rebiya Ramchandaran",
     position: "Creative Head",
     image: "/images/rebiya.jpeg",
@@ -21,18 +20,6 @@ const teamMembers: TeamMember[] = [
     position: "Design Head",
     image: "/images/laasya.jpg",
     
-=======
-    name: "SIDDHARTH SAINI",
-    position: "Secretary",
-    image: "/images/board/siddharth.jpg",
-    linkedin: "https://www.linkedin.com/in/siddharth-saini"
-  },
-  {
-    name: "SHUBHAM KUMAR",
-    position: "Co-Secretary",
-    image: "/images/board/shubham.jpg",
-    linkedin: "https://www.linkedin.com/in/shubham-kumar"
->>>>>>> 286c2185c3d7d63e8becaf935bf9b3cc733dd316
   }
 ];
 
@@ -85,7 +72,6 @@ const DesignDepartment = () => {
               variants={itemVariants}
               className="group relative"
             >
-<<<<<<< HEAD
               <div className="relative overflow-hidden rounded-lg bg-accent/10 border-2 border-accent">
                 <img
                   src={member.image}
@@ -95,17 +81,6 @@ const DesignDepartment = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-2 group-hover:translate-y-0 transition-transform">
                   <h3 className="text-lg font-bold text-white">{member.name}</h3>
-=======
-              <div className="relative overflow-hidden rounded-lg aspect-[3/4] bg-accent/10 border-2 border-accent">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform">
-                  <h3 className="text-xl font-bold text-white">{member.name}</h3>
->>>>>>> 286c2185c3d7d63e8becaf935bf9b3cc733dd316
                   <p className="text-accent">{member.position}</p>
                   {member.linkedin && (
                     <a
@@ -169,11 +144,7 @@ const DesignDepartment = () => {
             vitiiche@gmail.com
           </a>
           <p className="text-sm text-gray-400 mt-4">
-<<<<<<< HEAD
             Designed with ❤️ by IIChE VIT Team.
-=======
-            Copyright © 2023 IIChE VIT - All Rights Reserved.
->>>>>>> 286c2185c3d7d63e8becaf935bf9b3cc733dd316
           </p>
         </motion.footer>
       </div>
@@ -181,8 +152,4 @@ const DesignDepartment = () => {
   );
 };
 
-<<<<<<< HEAD
 export default DesignDepartment;
-=======
-export default DesignDepartment; 
->>>>>>> 286c2185c3d7d63e8becaf935bf9b3cc733dd316
