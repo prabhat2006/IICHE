@@ -59,10 +59,10 @@ const Events = () => {
   };
 
   return (
-    <div ref={sectionRef} id="events" className="h-screen py-12 bg-gradient-to-b from-primary to-secondary">
+    <section ref={sectionRef} id="events" className="py-12 bg-gradient-to-b from-primary to-secondary">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-10">Upcoming Events</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-center h-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-center">
           {events.map((event, index) => (
             <div
               key={index}
@@ -96,7 +96,7 @@ const Events = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

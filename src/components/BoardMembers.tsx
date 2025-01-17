@@ -7,7 +7,7 @@ const boardMembers = [
   {
     name: 'Shambhavi Satish Kumar',
     role: 'Chairperson',
-    image: 'images/shambavi.jpg',
+    image: 'images/sambhavi.jpg',
     
   },
   {
@@ -88,7 +88,7 @@ const BoardMembers = () => {
   }, []);
 
   return (
-    <div ref={sectionRef} id="board" className="py-20 bg-gradient-to-b from-secondary to-dark">
+    <section ref={sectionRef} id="board" className="py-20 bg-gradient-to-b from-secondary to-dark">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-center gap-4 mb-16">
           <Users className="w-12 h-12 text-accent" />
@@ -112,7 +112,7 @@ const BoardMembers = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
