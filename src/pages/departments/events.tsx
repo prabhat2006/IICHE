@@ -150,7 +150,11 @@ const EventsDepartment = () => {
             vitiiche@gmail.com
           </a>
           <p className="text-sm text-gray-400 mt-4">
+<<<<<<< HEAD
             Designed with ❤️ by IIChE VIT Team.
+=======
+            Copyright © 2023 IIChE VIT - All Rights Reserved.
+>>>>>>> 286c2185c3d7d63e8becaf935bf9b3cc733dd316
           </p>
         </motion.footer>
       </div>
