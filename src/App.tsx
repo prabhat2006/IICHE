@@ -20,7 +20,7 @@ import DesignDepartment from './pages/departments/design';
 import EditorialDepartment from './pages/departments/editorial';
 import TechnicalDepartment from './pages/departments/technical';
 import HRDepartment from './pages/departments/hr';
-import ChemSummit from './pages/our fests/chemSummit23';
+import ChemSummit from './pages/outFest/chemSummit23';
 
 const MainHome = () => {
   const location = useLocation();
