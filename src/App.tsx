@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react'; // Make sure to import React if required
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -20,8 +20,7 @@ import DesignDepartment from './pages/departments/design';
 import EditorialDepartment from './pages/departments/editorial';
 import TechnicalDepartment from './pages/departments/technical';
 import HRDepartment from './pages/departments/hr';
-import ChemSummit from './pages/our fests/chemSummit23';
-
+import ChemSummit from './pages/our fests/ChemSummit23';
 
 const MainHome = () => {
   const location = useLocation();
@@ -56,7 +55,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainHome />} />
         <Route path="/committee" element={<CommitteePage />} />
-        <Route path="/committee/vision" element={<Vision />} />
+        <Route path="/vision" element={<Vision />} /> {/* Fixed conflicting route path */}
         <Route path="/departments" element={<DepartmentsPage />} />
         <Route path="/fests" element={<FestsPage />} />
         <Route path="/achievements" element={<AchievementsPage />} />
@@ -68,10 +67,10 @@ const App = () => {
         <Route path="/departments/editorial" element={<EditorialDepartment />} />
         <Route path="/departments/technical" element={<TechnicalDepartment />} />
         <Route path="/departments/hr" element={<HRDepartment />} />
-        <Route path="/fests/chemsummit23" element={<ChemSummit/>} />
+        <Route path="/fests/chemsummit23" element={<ChemSummit />} />
       </Routes>
     </div>
   );
 };
 
-export default App; 
+export default App;
